@@ -44,6 +44,9 @@ const generateMultipleEntrys = (entry) => {
  * Webpack configuration for web.
  */
 const productionConfig = webpackMerge(commonConfig[0], {
+  // entry:{
+  //   url:helper.rootNode('src/url.js')
+  // },
   /**
    * Developer tool to enhance debugging
    *
@@ -69,7 +72,8 @@ const productionConfig = webpackMerge(commonConfig[0], {
      *
      * See: http://webpack.github.io/docs/configuration.html#output-filename
      */
-    filename: '[name].[chunkhash].bundle.js',
+    // filename: '[name].[chunkhash].bundle.js',
+    filename: '[name].bundle.js',
     /**
      * The filename of the SourceMaps for the JavaScript files.
      * They are inside the output.path directory.

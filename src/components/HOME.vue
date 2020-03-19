@@ -27,7 +27,8 @@
 <script>
     const modal = weex.requireModule('modal') || {};
     const stream = weex.requireModule('stream') || {};
-    const API = 'http://192.168.1.7:9090/categroies';
+    let {url} = require('../url');
+    const API = url + 'categroies';
     export default {
         name: 'URL Admin',
         created: function() {
